@@ -23,8 +23,8 @@ body {
 nav {
   position: absolute;
   left: 50%;
-transform: translateX(-50%);
-  top:8px;
+  transform: translateX(-50%);
+  top: 8px;
   width: 480px;
   background: white;
   border-radius: 24px;
@@ -98,4 +98,3 @@ li {
 li.selected {
   background: rgba(0, 128, 128, 0.137);
 }
-
