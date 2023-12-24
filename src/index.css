@@ -13,11 +13,8 @@ body {
 .window {
   width: 100vw;
   height: 100vh;
-  background: white;
+  background: whitesmoke;
   overflow: hidden;
-  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,12 +22,12 @@ body {
 
 nav {
   width: 480px;
-  background: #fdfdfd;
-  padding: 5px 5px 0;
-  border-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 1px solid #eeeeee;
+  background: whitesmoke;
+  border-radius: 24px;
+  margin-top: 8px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
   height: 44px;
 }
 
@@ -74,7 +71,6 @@ li {
   width: 100%;
   padding: 10px 15px;
   position: relative;
-  background: white;
   cursor: pointer;
   height: 24px;
   display: flex;
@@ -89,52 +85,16 @@ li {
 .underline {
   position: absolute;
   bottom: -1px;
-  left: 0;
-  right: 0;
+  left: 16px;
+  right: 16px;
   height: 1px;
   background: var(--accent);
 }
 
 li.selected {
-  background: #eee;
+  background: rgba(0, 128, 128, 0.541);
+  border-radius: 24px;
+  color: #fff;
+  
 }
 
-li button {
-  width: 20px;
-  height: 20px;
-  border: 0;
-  background: #fff;
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  stroke: #000;
-  margin-left: 10px;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  background: #fff;
-}
-
-.add-item {
-  width: 30px;
-  height: 30px;
-  background: #eee;
-  border-radius: 50%;
-  border: 0;
-  cursor: pointer;
-  align-self: center;
-}
-
-.add-item:disabled {
-  opacity: 0.4;
-  cursor: default;
-  pointer-events: none;
-}
