@@ -8,12 +8,6 @@ export const allIngredients = [
   { icon: "🥂", label: "Champers?" }
 ];
 
-const [tomato, lettuce, cheese] = allIngredients;
-export const initialTabs = [tomato, lettuce, cheese];
+const [tomato, cheese,carrot, banna] = allIngredients;
+export const initialTabs = [tomato, cheese,carrot, banna];
 
-export function getNextIngredient(
-  ingredients
-){
-  const existing = new Set(ingredients);
-  return allIngredients.find((ingredient) => !existing.has(ingredient));
-}
