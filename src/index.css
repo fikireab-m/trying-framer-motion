@@ -36,17 +36,17 @@ nav {
 }
 
 .tabs {
+  width: 100%;
+  background: teal;
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: nowrap;
-  width: 100%;
 }
 
 main {
   width: 100vw;
-  background: teal;
   display: flex;
   justify-content: center;
   align-items: center;

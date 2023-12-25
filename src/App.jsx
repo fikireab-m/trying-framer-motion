@@ -27,10 +27,10 @@ export default function App() {
         <AnimatePresence>
           <motion.div
             key={selectedTab ? selectedTab.label : "empty"}
-            initial={{ y: 10, opacity: 0 }}
+            initial={{ y: 2000, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ y: -10, opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            exit={{ y: 2000, opacity: 0 }}
+            transition={{ duration: 0.5 }}
           >
             {selectedTab ? selectedTab.icon : "😋"}
           </motion.div>
