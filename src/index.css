@@ -37,7 +37,6 @@ nav {
 
 .tabs {
   width: 100%;
-  background: teal;
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
@@ -45,8 +44,10 @@ nav {
   flex-wrap: nowrap;
 }
 
-main {
+.main_view {
   width: 100vw;
+  height: 100vh;
+  background: #008080;
   display: flex;
   justify-content: center;
   align-items: center;
